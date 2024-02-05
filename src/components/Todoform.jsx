@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTodo } from '../contexts';
+import { useState } from 'react';
 
 
 function TodoForm() {
@@ -15,8 +16,6 @@ function TodoForm() {
     addTodo({ todo, completed: false })
     setTodo("")
   }
-
-  (property)
 
   return (
     <form onSubmit={add} className="flex">
